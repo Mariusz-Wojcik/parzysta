@@ -10,6 +10,8 @@ namespace parzysta
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Podaj liczbe a powiem Ci czy jest parzysta czy nieparzysta:");
+            var number = Console.ReadLine();
         }
     }
 }
