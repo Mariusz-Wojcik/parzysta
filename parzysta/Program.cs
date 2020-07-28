@@ -14,6 +14,13 @@ namespace parzysta
             Console.WriteLine("Podaj liczbe a powiem Ci czy jest parzysta czy nieparzysta:");
             var number = GetData();
 
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("Twoja liczba jest parzysta");              
+            }
+            else
+                Console.WriteLine("Twoja liczba jest nieparzysta");
+
         }
         private static int GetData()
         {
