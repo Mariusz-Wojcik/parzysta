@@ -11,16 +11,22 @@ namespace parzysta
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Podaj liczbe a powiem Ci czy jest parzysta czy nieparzysta:");
-            var number = GetData();
-
-            if (number % 2 == 0)
+            try
             {
-                Console.WriteLine("Twoja liczba jest parzysta");              
-            }
-            else
-                Console.WriteLine("Twoja liczba jest nieparzysta");
+                Console.WriteLine("Podaj liczbe a powiem Ci czy jest parzysta czy nieparzysta:");
+                var number = GetData();
 
+                if (number % 2 == 0)
+                {
+                    Console.WriteLine("Twoja liczba jest parzysta");
+                }
+                else
+                    Console.WriteLine("Twoja liczba jest nieparzysta");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
         private static int GetData()
         {
